@@ -1,11 +1,20 @@
 # Publishing Beebo updates
 
-The public footer and homepage download area display versions and Eastern dates/times from the update feeds. Keep these feeds accurate whenever a build is published.
+Public labels and download links follow `desktop-version.json` and `downloads/app-build.json`. Keep version, SHA-256, size, notes and publication time accurate. Store UTC timestamps with a timezone; the website displays Eastern time with seconds. Build time and publication time are different fields.
 
-- `desktop-version.json`: version, a versioned installer URL, SHA-256, notes, and `publishedAtUtc` from the actual GitHub release publication time.
-- `downloads/app-build.json`: versionName, versionCode, bytes, SHA-256, builtAtUtc and (when published) publishedAtUtc. UTC timestamps must include a timezone. The website converts them to Eastern time.
-- If an Android build only has a build timestamp, the page labels it Built. A publication timestamp is labelled Released. Do not invent a release time or copy one from an older build.
-- `polish.js` refreshes the labels from these feeds, so new releases do not require rewriting every HTML page. Embedded labels are the last published fallback if metadata cannot be fetched.
-- If the Windows feed has no timestamp, the page attempts to read it from the matching `Beebo-<version>` GitHub release. Do not rely on that fallback for normal publishing.
+## Hosting
 
-Build and test first. Keep Android signing compatible with the existing website APK. Upload and verify the versioned Windows release before pointing the feed at it. Push the website, then verify its live metadata and Android APK hash. Set the verified release as latest for the homepage Windows download link. Keep rollback copies in a private archive, outside the public website and public release assets. Only current supported installers may be downloadable. Nick requested this policy on September 20, 2026 because older builds may bypass licensing.
+Current installers live at `https://origin.beebo.tv/downloads/` on OVH in `/srv/beebo-public/downloads/`. Publish only the current supported version for each product. Keep old installers and hashes privately, outside the public directory. Do not add binaries to this public Git repository or create another GitHub release.
+
+The website itself currently uses GitHub Pages. That migration is separate; do not make its repository private while Pages is serving it. Old files may still exist in public Git history until that migration is complete.
+
+## Release checks
+
+1. Build and test. Check Android signing compatibility; report Windows code-signing status accurately.
+2. Back up the old artifact privately and upload the new versioned artifact to OVH. Check its SHA-256 and byte count on the server.
+3. Set `publishedAtUtc` to the actual time the new file became publicly available. Update both metadata feeds, embedded version/date fallbacks, release notes and download links. Never reuse an older release date.
+4. Replace the legacy Windows download bucket object with the same installer, using the service copy tool. Verify the copy actually ran and its hash matches.
+5. Test live downloads, range requests, metadata and the rendered pages. Publish the website and verify the deployment.
+6. Withdraw superseded public artifacts after the new version works. Keep rollback copies privately. Removing a download cannot revoke copies already installed or shared.
+
+`polish.js` refreshes release labels and supported OVH download links. Embedded links and labels remain usable if a metadata request fails. Do not publish credentials, signing keys, or private backup directories.
