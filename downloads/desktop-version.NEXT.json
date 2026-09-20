@@ -1,9 +1,9 @@
 {
-  "version": "0.1.54",
-  "url": "https://origin.beebo.tv/downloads/BeeboEntertainmentSetup-0.1.54.exe",
-  "sha256": "10b17fca45a984f19db59abe7d01cee5702ef23044d0f7ef7ef69607b9940dac",
-  "size": 164956584,
-  "notes": "What’s new in 0.1.54:\n• A cleaner desktop, grouped navigation and a compact side-by-side setup.\n• Phone Backups and Video Playlists labels.\n• Clear upload history while keeping every video.\n• Sidebar logout and controls for away access across approved users.\n• Clearer relay status and connection-test wording.",
-  "publishedAtUtc": "2026-09-20T08:20:14Z",
-  "publishedAtEastern": "Sep 20, 2026, 4:20:14 AM Eastern"
+    "version":  "0.1.55",
+    "url":  "https://github.com/SWGfan/beebotv/releases/download/Beebo-0.1.55/BeeboEntertainmentSetup.exe",
+    "sha256":  "e8aa68081ade612e7d66e25e3a183f43120e34088c2f9283aa4ec3829eae88c8",
+    "size":  164989888,
+    "notes":  "What\u0027s new in 0.1.55:\n• Fixed connections freezing after a network change (Wi-Fi to mobile data, or a drop and reconnect)\n• Fixed slow fast-forwarding/seeking away from home\n• A new password now works away from home right away, no home sign-in needed first\n• \"Beebo Relay only\" now actually turns the relay on\n• New: cast to a TV while you\u0027re away from home (same-file only for now)",
+    "publishedAtUtc":  "2026-09-20T15:52:43Z",
+    "publishedAtEastern":  "Sep 20, 2026, 11:52:43 AM Eastern"
 }
