@@ -1,0 +1,33 @@
+# Staged static product sites. Rename to beebo-domains.caddy in
+# /etc/caddy/beebo.d only after the matching Namecheap A records point to
+# 148.113.242.8, then validate and reload Caddy.
+
+http://beeborelay.com, http://www.beeborelay.com {
+	redir https://{host}{uri} 308
+}
+beeborelay.com, www.beeborelay.com {
+	root * /srv/beebo-public/sites/beeborelay.com
+	header -Server
+	header X-Content-Type-Options nosniff
+	file_server
+}
+
+http://beebovpn.com, http://www.beebovpn.com {
+	redir https://{host}{uri} 308
+}
+beebovpn.com, www.beebovpn.com {
+	root * /srv/beebo-public/sites/beebovpn.com
+	header -Server
+	header X-Content-Type-Options nosniff
+	file_server
+}
+
+http://beebo.space, http://www.beebo.space {
+	redir https://{host}{uri} 308
+}
+beebo.space, www.beebo.space {
+	root * /srv/beebo-public/sites/beebospace.com
+	header -Server
+	header X-Content-Type-Options nosniff
+	file_server
+}
