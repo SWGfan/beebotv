@@ -74,7 +74,7 @@ $0.99/month. 30-day free trial, no card.
 - Passengers can scan a QR to join the room in a browser — no app, no account —
   for the **party games, reactions and roster**
 - **Eleven party games** synced across the room: This or That, Movie Trivia (generated
-  from your own library), Would You Rather, 20 Questions, Scavenger Bingo, Story Builder,
+  from your own library), Tough Choices, Twenty Questions, Scavenger Bingo, Story Builder,
   Category Chains, The Quiet Game, Pick the Next One, plus a solo bot opponent
 - **Campsite Mode** — your *phone* becomes the server. Guests scan a QR and watch over
   your hotspot with no internet, no app and no account

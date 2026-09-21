@@ -100,21 +100,21 @@ Every public product page should use two side-by-side download panels: **Windows
 
 ### Public naming guardrails
 
-- Use **Four in a Row**, never Connect Four or Connect 4.
+- Use **Drop Four**, never Drop Four or Drop Four.
 - Use **Sea Battle**, never Battleship.
 - Use **Reversi**, not Othello; **Crazy Eights**, not UNO; **Pairs**, not Memory; **Snakes and Ladders**, not Chutes and Ladders.
 - Every game title, artwork, page copy, metadata and browser preview needs commercial naming/art review before broad launch. Generic names in source are not legal clearance.
 
 | Category | Implemented public titles | Play evidence | Capture set required before its individual public page |
 |---|---|---|---|
-| Board / strategy | Checkers; Chess; Dominoes; Dots and Boxes; Five Dice; Four in a Row; Ludo; Mancala; Nine Men’s Morris; Reversi; Sea Battle; Snakes and Ladders; Tic-Tac-Toe | Host can start; bot-move source present. Guest feature needs actual room test. | Menu tile, setup, in-play, result. Sea Battle additionally needs drag/drop ship placement, legal shot, hit/miss and result without exposing both boards. Dice games need on-board rolling animation plus settled result. |
+| Board / strategy | Checkers; Chess; Dominoes; Dots and Boxes; Five Dice; Drop Four; Ludo; Mancala; Nine Men’s Morris; Reversi; Sea Battle; Snakes and Ladders; Tic-Tac-Toe | Host can start; bot-move source present. Guest feature needs actual room test. | Menu tile, setup, in-play, result. Sea Battle additionally needs drag/drop ship placement, legal shot, hit/miss and result without exposing both boards. Dice games need on-board rolling animation plus settled result. |
 | Cards / matching | Crazy Eights; Go Fish; Old Maid; Pairs; Snap; War | Host can start; bot-move source present. | Menu tile, player hand/board, meaningful action, result. |
-| Outdoor | Car Bingo; I Spy; Nature Bingo | Host can start; bot-move source present. | Prompt/card, marked progress, result. Use generic safe outdoor details. |
+| Outdoor | Car Bingo; Sight Race; Nature Bingo | Host can start; bot-move source present. | Prompt/card, marked progress, result. Use generic safe outdoor details. |
 | Party — host can start | Classic Bingo; Hot Potato; Movie Trivia; Rock Paper Scissors | Host can start; bot-move source present. | Lobby, action/reveal, score/result. Movie Trivia must use Beebo-authored or licensed questions in browser previews. |
 | Party — guests required | Campfire Werewolf; Fake Out; Pick the Next One; Sketch & Guess; The Quiet Game; Two Truths and a Lie; Who’s the Spy? | Game catalogue requires guests. | Lobby, guest-phone state, room action/reveal and result. Never advertise bot play. |
 | Word / talk — host can start | Campfire Stories; Category Chains; Story Builder | Host can start; bot-move source present. | Prompt, contribution or turn state, completed result. |
-| Word / talk — guests required | 20 Questions; This or That; Would You Rather | Game catalogue requires guests. | Guest-specific prompt, votes or questions, room result. Never advertise bot play. |
-| Solo puzzles | Five Letters; Minesweeper; Solitaire; Sudoku | Solo games in source. | Main board, meaningful play state, completion/result. |
+| Word / talk — guests required | Twenty Questions; This or That; Tough Choices | Game catalogue requires guests. | Guest-specific prompt, votes or questions, room result. Never advertise bot play. |
+| Solo puzzles | Five Letters; Hidden Mines; Patience; Number Grid | Solo games in source. | Main board, meaningful play state, completion/result. |
 
 ### Game-page controls to document only after verification
 
@@ -154,7 +154,7 @@ Every public product page should use two side-by-side download panels: **Windows
 4. **Campsite video:** use a separate temporary hotspot; show Campsite Mode QR, guest browser video and guest games. Delete/revoke temporary hotspot details after filming.
 5. **Watch Together video:** two signed-in sample devices, same title. Show play/pause/seek/re-sync; state on-screen that it is app-to-app on the same Beebo account.
 6. **Stories and outdoor tools:** record neutral sample story/voice interface and safe test activity screens without location information.
-7. **Game capture sprint:** follow the 43-game matrix; record genuine screens only. Begin with Four in a Row, Sea Battle, Five Dice, Chess, Movie Trivia, Campfire Werewolf, Sketch & Guess, Story Builder, Five Letters and Solitaire.
+7. **Game capture sprint:** follow the 43-game matrix; record genuine screens only. Begin with Drop Four, Sea Battle, Five Dice, Chess, Movie Trivia, Campfire Werewolf, Sketch & Guess, Story Builder, Five Letters and Patience.
 8. **Accessibility and approval:** record Android model/OS and app version, desktop version, capture date, source screen, alt text and reviewer approval in `assets/games/captures.json`. Convert approved originals to WebP only after review; keep originals out of the public web root.
 
 ## Explicit exclusions for the public catalogue

@@ -22,7 +22,7 @@
 7. **Connect a phone** — show the Android download panel; install the verified APK; sign in as the sample account; connect through a safe temporary QR or manual address.
 8. **Phone experience** — browse Movies, TV, Continue, Downloads and Surf. Show the connection status accurately: Home, direct away connection, or relay — only the route actually used.
 9. **Campsite and sharing** — with a temporary test hotspot, show Campsite Mode, a guest joining, the camp icon, and a shared Beebo-owned photo/video advancing on both phones. Never display real people’s photos without permission.
-10. **Games and stories** — show the game catalogue and a small set of finished games (including `4-in-a-row` and Sea Battle), then Story Mode with neutral sample names and only the voice choices that work in the build.
+10. **Games and stories** — show the game catalogue and a small set of finished games (including `Drop Four` and Sea Battle), then Story Mode with neutral sample names and only the voice choices that work in the build.
 11. **Watch Together** — only if fully tested on two current builds: show two sample accounts watching the same Beebo-owned sample title and demonstrate one synchronized pause/resume. Do not claim browser guest playback if it has not shipped.
 12. **Close** — show account controls, privacy settings and log out. Link viewers to the exact current release/download page.
 

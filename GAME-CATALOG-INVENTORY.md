@@ -18,8 +18,8 @@ Generated from the Android source on 2026-09-20 for website planning. This inven
 
 ## Required cleanup before public game pages
 
-1. Use **Four in a Row** everywhere visible to customers. The Android display title is already correct, but the internal ID is connect4 and some existing site assets still use that legacy string.
-2. Capture a current phone screenshot for every game. Existing site graphics cover only Four in a Row, Chess, and Five Dice; they are illustration assets, not a complete game-page screenshot set.
+1. Use **Drop Four** everywhere visible to customers. The Android display title is already correct, but the internal ID is Drop Four and some existing site assets still use that legacy string.
+2. Capture a current phone screenshot for every game. Existing site graphics cover only Drop Four, Chess, and Five Dice; they are illustration assets, not a complete game-page screenshot set.
 3. Do not publish any references to console emulation or unimplemented games.
 4. Add playable website demos only after their rules, bot behavior, guest behavior, accessibility, and mobile controls have been separately tested. A static game page can safely ship first.
 
@@ -32,7 +32,7 @@ Generated from the Android source on 2026-09-20 for website planning. This inven
 | Dominoes | dominoes | campsite / BOARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Dots and Boxes | dotsboxes | campsite / BOARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Five Dice | fivedice | campsite / BOARD | Host can start | Bundled app art | assets/game-update-1.35/fivedice.svg | Keep current generic public title; obtain legal review before final market launch. |
-| Four in a Row | connect4 | campsite / BOARD | Host can start | Bundled app art | assets/connect-4-guests.png<br>assets/game-update-1.35/connect4.svg | Keep public title “Four in a Row”; replace legacy website filename/text “connect4” before public launch. |
+| Drop Four | Drop Four | campsite / BOARD | Host can start | Bundled app art | assets/Drop Four-guests.png<br>assets/game-update-1.35/Drop Four.svg | Keep public title “Drop Four”; replace legacy website filename/text “Drop Four” before public launch. |
 | Ludo | ludo | campsite / BOARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Mancala | mancala | campsite / BOARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Nine Men's Morris | morris | campsite / BOARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
@@ -47,7 +47,7 @@ Generated from the Android source on 2026-09-20 for website planning. This inven
 | Snap | snap | campsite / CARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | War | war | campsite / CARD | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Car Bingo | bingo | campsite / OUTDOORS | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
-| I Spy | ispy | campsite / OUTDOORS | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
+| Sight Race | ispy | campsite / OUTDOORS | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Nature Bingo | naturebingo | campsite / OUTDOORS | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Campfire Werewolf | werewolf | campsite / PARTY | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Classic Bingo | classicbingo | campsite / PARTY | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
@@ -60,16 +60,16 @@ Generated from the Android source on 2026-09-20 for website planning. This inven
 | The Quiet Game | quiet | campsite / PARTY | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Two Truths and a Lie | twotruths | campsite / PARTY | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Who's the Spy? | spy | campsite / PARTY | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
-| 20 Questions | twentyquestions | campsite / WORD_AND_TALK | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
+| Twenty Questions | twentyquestions | campsite / WORD_AND_TALK | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Campfire Stories | campfirestories | campsite / WORD_AND_TALK | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Category Chains | categorychains | campsite / WORD_AND_TALK | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Story Builder | storybuilder | campsite / WORD_AND_TALK | Host can start | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | This or That | thisorthat | campsite / WORD_AND_TALK | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
-| Would You Rather | wouldyourather | campsite / WORD_AND_TALK | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
+| Tough Choices | wouldyourather | campsite / WORD_AND_TALK | Guests required | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 | Five Letters | five-letters | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
-| Minesweeper | minesweeper | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
-| Solitaire | solitaire | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
-| Sudoku | sudoku | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
+| Hidden Mines | minesweeper | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
+| Patience | solitaire | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
+| Number Grid | sudoku | solo / PUZZLE | Solo | Bundled app art | No website screenshot found | Keep current generic public title; obtain legal review before final market launch. |
 
 ## Source of truth
 

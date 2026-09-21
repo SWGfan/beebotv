@@ -4,15 +4,15 @@
 
 Create one public, accessible HTML page for every **built** Beebo game, plus a Games index. Each page must use an actual capture from the current app build, explain the real play mode, and offer a small browser demo only where it faithfully represents the shipped game. Do not use emulator, ROM, console, or third-party game language or imagery.
 
-This plan covers the 39 Campsite games and four solo games found in the mobile source: **43 games total**. `Four in a Row` is the public name for the drop-and-line game. Do not use `Connect Four` in page titles, descriptions, image filenames, metadata, or UI.
+This plan covers the 39 Campsite games and four solo games found in the mobile source: **43 games total**. `Drop Four` is the public name for the drop-and-line game. Do not use `Drop Four` in page titles, descriptions, image filenames, metadata, or UI.
 
 ## What can be used today
 
 | Asset | What it is | Safe use | Not suitable for |
 |---|---|---|---|
-| `assets/connect-4-guests.png` (390×1069) | Real phone capture of Four in a Row with guests | Four in a Row page, guest-play explanation | A general game-library hero or a bot-play claim |
+| `assets/Drop Four-guests.png` (390×1069) | Real phone capture of Drop Four with guests | Drop Four page, guest-play explanation | A general game-library hero or a bot-play claim |
 | `assets/guest-games-menu.png` (390×1409) | Real phone capture of the guest Games menu | Games index and guest-play explainer | A screenshot for a specific game |
-| `assets/game-update-1.35/connect4.svg` | Promotional illustration | Four in a Row card accent | A claimed app screenshot |
+| `assets/game-update-1.35/Drop Four.svg` | Promotional illustration | Drop Four card accent | A claimed app screenshot |
 | `assets/game-update-1.35/chess.svg` | Promotional illustration | Chess card accent | A claimed app screenshot |
 | `assets/game-update-1.35/fivedice.svg` | Promotional illustration | Five Dice card accent | A claimed app screenshot |
 | `assets/campsite.png`, `assets/camp-morning.png`, `assets/friends-campsite.png` | Campsite marketing artwork | Shared Campsite introduction | Individual-game UI proof |
@@ -34,7 +34,7 @@ assets/games/<slug>/bot.webp       # only when the shipped game truly supports i
 assets/games/<slug>/guest.webp     # only when guests are part of its real flow
 ```
 
-Use lossless PNG during capture review, then produce WebP from the approved capture. Keep the original source capture outside the public web root. Give every image accurate alt text, such as: `Four in a Row on a phone showing red and gold counters and the current-player prompt.`
+Use lossless PNG during capture review, then produce WebP from the approved capture. Keep the original source capture outside the public web root. Give every image accurate alt text, such as: `Drop Four on a phone showing red and gold counters and the current-player prompt.`
 
 ## Universal page template
 
@@ -55,11 +55,11 @@ Reusable skeleton:
 
 ```html
 <main id="main-content" class="game-page">
-  <nav aria-label="Breadcrumb"><a href="../games.html">Games</a> / <span aria-current="page">Four in a Row</span></nav>
+  <nav aria-label="Breadcrumb"><a href="../games.html">Games</a> / <span aria-current="page">Drop Four</span></nav>
   <section class="game-hero">
     <div>
       <p class="eyebrow">Campsite game</p>
-      <h1>Four in a Row</h1>
+      <h1>Drop Four</h1>
       <p>Take turns dropping counters. Make a line of four before your opponent does.</p>
       <ul class="game-badges" aria-label="How this game plays">
         <li>2 players</li><li>Play against Beebo</li><li>Guest phones supported</li>
@@ -68,7 +68,7 @@ Reusable skeleton:
     </div>
     <figure>
       <img src="../assets/games/four-in-a-row/play.webp" width="1440" height="900"
-           alt="Four in a Row in Beebo showing the game board and the active player's turn.">
+           alt="Drop Four in Beebo showing the game board and the active player's turn.">
       <figcaption>Actual Beebo mobile game screen.</figcaption>
     </figure>
   </section>
@@ -90,7 +90,7 @@ The generated template must not place untrusted player names or game text into `
 
 | Public page title | Slug | Real capture set required | Browser bot preview | Guest-play wording |
 |---|---|---|---|---|
-| Four in a Row | `four-in-a-row` | setup, mid-game, win | Yes; a simple, original four-counter demo that mirrors the shipped rules | Two people can play from their own phones; host can also play Beebo |
+| Drop Four | `four-in-a-row` | setup, mid-game, win | Yes; a simple, original four-counter demo that mirrors the shipped rules | Two people can play from their own phones; host can also play Beebo |
 | Tic-Tac-Toe | `tic-tac-toe` | board, result | Yes | Two guest phones or Beebo opponent |
 | Checkers | `checkers` | board, forced capture or result | Yes | Two guest phones or Beebo opponent |
 | Reversi | `reversi` | board, score result | Yes | Two guest phones or Beebo opponent |
@@ -121,7 +121,7 @@ The generated template must not place untrusted player names or game text into `
 |---|---|---|---|---|
 | Movie Trivia | `movie-trivia` | question, answer reveal, score result | Yes, using only Beebo-authored or licensed questions | Guest phones or Beebo opponent |
 | Rock Paper Scissors | `rock-paper-scissors` | choice, reveal, round result | Yes | Guest phones or Beebo opponent |
-| I Spy | `i-spy` | prompt, answer/reveal, result | Yes | Guest phones or Beebo prompt player |
+| Sight Race | `i-spy` | prompt, answer/reveal, result | Yes | Guest phones or Beebo prompt player |
 | Car Bingo | `car-bingo` | card, marked line, win | Yes | Guest phones or Beebo opponent |
 | Nature Bingo | `nature-bingo` | card, marked line, win | Yes | Guest phones or Beebo opponent |
 | Story Builder | `story-builder` | prompt, contribution, finished story | Yes | Guest phones or Beebo co-writer |
@@ -137,8 +137,8 @@ These pages may have an interactive **rules teaser** (select a sample answer, dr
 | Public page title | Slug | Real capture set required | Why no bot preview |
 |---|---|---|---|
 | This or That | `this-or-that` | question, individual votes, room result | The point is the real room split |
-| Would You Rather | `would-you-rather` | question, individual votes, room result | The point is the real room split |
-| 20 Questions | `twenty-questions` | secret prompt, question, result | Requires a human’s secret and responses |
+| Tough Choices | `would-you-rather` | question, individual votes, room result | The point is the real room split |
+| Twenty Questions | `twenty-questions` | secret prompt, question, result | Requires a human’s secret and responses |
 | The Quiet Game | `the-quiet-game` | group start, timer/status, result | Requires a real group maintaining quiet |
 | Pick the Next One | `pick-the-next-one` | prompt, selections, result | Requires room choice |
 | Who’s the Spy? | `whos-the-spy` | private role, clue round, vote | Secret social roles need real participants |
@@ -152,9 +152,9 @@ These pages may have an interactive **rules teaser** (select a sample answer, dr
 | Public page title | Slug | Real capture set required | Browser preview |
 |---|---|---|---|
 | Five Letters | `five-letters` | daily board, keyboard, result | Yes; a limited original word puzzle with an explicit word list licence/review |
-| Sudoku | `sudoku` | board, note mode, completion | Yes |
-| Minesweeper | `minesweeper` | board, flag, result | Yes |
-| Solitaire | `solitaire` | tableau, foundation move, win | Yes; traditional card rules, original card art |
+| Number Grid | `sudoku` | board, note mode, completion | Yes |
+| Hidden Mines | `minesweeper` | board, flag, result | Yes |
+| Patience | `solitaire` | tableau, foundation move, win | Yes; traditional card rules, original card art |
 
 ## Capture runbook
 
@@ -170,15 +170,15 @@ These pages may have an interactive **rules teaser** (select a sample answer, dr
 ## Implementation order
 
 1. Build `games.html`, shared CSS, shared header/footer, and the page generator with the template above.
-2. Publish the three pages that have supporting assets today only after replacing the promotional artwork with approved real captures: Four in a Row, Chess, and Five Dice. The existing SVGs can remain decorative, never labelled as screenshots.
-3. Capture the showcase priority set: Four in a Row, Sea Battle, Five Dice, Movie Trivia, Chess, Campfire Werewolf, Sketch & Guess, Story Builder, Five Letters, and Solitaire.
+2. Publish the three pages that have supporting assets today only after replacing the promotional artwork with approved real captures: Drop Four, Chess, and Five Dice. The existing SVGs can remain decorative, never labelled as screenshots.
+3. Capture the showcase priority set: Drop Four, Sea Battle, Five Dice, Movie Trivia, Chess, Campfire Werewolf, Sketch & Guess, Story Builder, Five Letters, and Patience.
 4. Add the remaining pages in groups after their captures are approved.
 5. Add lightweight browser previews only after the game-specific rules and screenshots are approved. Do not embed the Android app, a third-party game, an emulator, or a remote iframe.
 6. Add the Games index to all Beebo company sites using the same cream/white/gold visual system and download panels; product sites may link to the Beebo games index rather than duplicate all 43 pages.
 
 ## Naming and marketing guardrails
 
-- Use `Four in a Row`, never `Connect Four` or `Connect 4`.
+- Use `Drop Four`, never `Drop Four` or `Drop Four`.
 - Use `Sea Battle`, never `Battleship`.
 - Use `Reversi`, not `Othello`; `Crazy Eights`, not `UNO`; `Pairs`, not `Memory`; and `Snakes and Ladders`, not `Chutes and Ladders`.
 - Do not use any emulator, ROM, N64, PS2, console, or game-library claim.
@@ -191,6 +191,6 @@ These pages may have an interactive **rules teaser** (select a sample answer, dr
 - No page calls a promotional illustration a screenshot.
 - No guest-required page advertises bot play.
 - Every bot preview reflects a feature currently present in the shipped app.
-- Four in a Row and Sea Battle use only the safe names everywhere, including URLs and image alt text.
+- Drop Four and Sea Battle use only the safe names everywhere, including URLs and image alt text.
 - All preview controls work by keyboard and touch; focus order and contrast are verified on phone and desktop sizes.
 - All download panels read release version/date/time from the shared release data rather than hand-entered text.
